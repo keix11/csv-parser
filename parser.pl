@@ -44,12 +44,12 @@ sub trim {
 # @values convert to html.
 sub convert_to_html {
 
-    my ($event, $rank, $number, $name, $time) = @_;
-    my $html =             "\t<tr>\n\t\t<td>" .
-            $rank        . "</td>\n\t\t<td>" .
-            $number      . "</td>\n\t\t<td>" .
-            $name        . "</td>\n\t\t<td>" .
-            &trim($time) . "</td>\n\t</tr>\n";
+    my ($first, $second, $third, $fourth) = @_;
+    my $html =               "\t<tr>\n\t\t<td>" .
+            $first         . "</td>\n\t\t<td>" .
+            $second        . "</td>\n\t\t<td>" .
+            $third         . "</td>\n\t\t<td>" .
+            &trim($fourth) . "</td>\n\t</tr>\n";
 
     return $html;
 
