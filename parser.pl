@@ -18,16 +18,12 @@ open(FH, "<:encoding(cp932)", $file)
 # Main Method is This.
 sub main {
 
-    print("<table>\n");
-
     while (<FH>) {
         my @values = split(/,/, $_);
         my $html   = &convert_to_html(@values);
 
         print(&encode("UTF-8", $html));
     }
-
-    print("</table>\n");
 
 }
 
