@@ -35,6 +35,7 @@ sub trim {
     $string =~ s/\s+$//;
 
     return $string;
+
 }
 
 # @values convert to html.
